@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "task g++",
+            "command": "E:\\MSYS2\\ucrt64\\bin\\g++.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-I",
+                "F:\\codeProject\\vsCode",
+                "-std=c++17"
+            ],
+            "options": {
+                "cwd": "E:\\MSYS2\\ucrt64\\bin"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new", //这里shared表示共享，改成new之后每个进程创建新的端口
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        }
+       
+    ]
+}
