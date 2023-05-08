@@ -5,90 +5,92 @@
  * @LastEditTime : 2023-03-29 11:37:36
  * @FilePath     : \test2\2.cpp
  * @Description  : // // #include<iostream>
-// // using namespace std;
-// // #include<string>
-// // class Cube
-// //{
-// // public:
-// //
-// //	//ĞÕÃûÉèÖÃ¿É¶Á¿ÉĞ´
-// //	void setm_L(int l) {
-// //		m_L = l;
-// //	}
-// //	int  getL()
-// //	{
-// //		return m_L;
-// //	}
-// //
-// //
-// //	void setm_W(int w) {
-// //		m_W = w;
-// //	}
-// //	int  getW()
-// //	{
-// //		return m_W;
-// //	}
-// //	void setm_H(int h) {
-// //		m_H = h;
-// //	}
-// //	int  getH()
-// //	{
-// //		return m_H;
-// //	}
-// //
-// //	int calculateS()
-// //	{
-// //		return (m_L * m_H + m_L * m_W + m_W * m_H) * 2;
-// //	}
-// //
-// //	int calculateV()
-// //	{
-// //		return m_L * m_H * m_W;
-// //	}
-// //
-// //	bool Compare(Cube& c2)
-// //	{
-// //		if (getL() == c2.getL() && getW() == c2.getW() && getH() == c2.getH())
-// //		{
-// //			return true;
-// //		}
-// //		return false;
-// //	}
-// // private://ÊôĞÔ
-// //	int m_L;
-// //	int m_W;
-// //	int m_H;
-// // };
-// //
-// // bool Compare(Cube& c1, Cube& c2)
-// //{
-// //	if (c1.getL() == c2.getL()&& c1.getW() == c2.getW()&& c1.getH() == c2.getH())
-// //	{
-// //		return true;
-// //	}
-// //	return false;
-// // }
-// //
-// // int main() {
-// //	Cube c1;
-// //	c1.setm_H(10);
-// //	c1.setm_W(10);
-// //	c1.setm_L(11);
-// //
-// //	Cube c2;
-// //	c2.setm_H(10);
-// //	c2.setm_W(10);
-// //	c2.setm_L(11);
-// //
-// //	cout <<c1.calculateS() << endl;
-// //	cout << c1.calculateV() << endl;
-// //
-// //	cout << Compare(c1,c2) << endl;
-// //	cout << c1.Compare(c2) << endl;
-// //	system("pause");
-// //
-// //	return 0;
-// // }
+ * */
+using namespace std;
+#include<string>
+#include<iostream>
+class Cube
+{
+public:
+
+	//å§“åè®¾ç½®å¯è¯»å¯å†™
+	void setm_L(int l) {
+		m_L = l;
+	}
+	int  getL()
+	{
+		return m_L;
+	}
+
+
+	void setm_W(int w) {
+		m_W = w;
+	}
+	int  getW()
+	{
+		return m_W;
+	}
+	void setm_H(int h) {
+		m_H = h;
+	}
+	int  getH()
+	{
+		return m_H;
+	}
+
+	int calculateS()
+	{
+		return (m_L * m_H + m_L * m_W + m_W * m_H) * 2;
+	}
+
+	int calculateV()
+	{
+		return m_L * m_H * m_W;
+	}
+
+	bool Compare(Cube& c2)
+	{
+		if (getL() == c2.getL() && getW() == c2.getW() && getH() == c2.getH())
+		{
+			return true;
+		}
+		return false;
+	}
+private://å±æ€§
+	int m_L;
+	int m_W;
+	int m_H;
+};
+
+bool Compare(Cube& c1, Cube& c2)
+{
+	if (c1.getL() == c2.getL()&& c1.getW() == c2.getW()&& c1.getH() == c2.getH())
+	{
+		return true;
+	}
+	return false;
+}
+
+int main() {
+	Cube c1;
+	c1.setm_H(10);
+	c1.setm_W(10);
+	c1.setm_L(11);
+
+	Cube c2;
+	c2.setm_H(10);
+	c2.setm_W(10);
+	c2.setm_L(11);
+
+	cout <<c1.calculateS() << endl;
+	cout << c1.calculateV() << endl;
+
+	cout << Compare(c1,c2) << endl;
+	cout << c1.Compare(c2) << endl;
+	
+
+	return 0;
+}
 
 // // #include<iostream>
 // // using namespace std;
@@ -97,15 +99,15 @@
 // // class Person
 // //{
 // // public:
-// //	//¹¹Ôìº¯Êı
+// //	//æ„é€ å‡½æ•°
 // //	Person(int a)
 // //	{
-// //		cout << "PersonµÄ¹¹Ôìº¯Êıµ÷ÓÃ" << endl;
+// //		cout << "Personçš„æ„é€ å‡½æ•°è°ƒç”¨" << endl;
 // //	}
-// //	//Îö¹¹º¯Êı
+// //	//ææ„å‡½æ•°
 // //	~Person()
 // //	{
-// //		cout << "PersonµÄÎö¹¹º¯Êıµ÷ÓÃ" << endl;
+// //		cout << "Personçš„ææ„å‡½æ•°è°ƒç”¨" << endl;
 // //	}
 // //
 // // };
@@ -119,7 +121,7 @@
 // //
 // //	test01();
 // //	//Person p;
-// //	system("pause");
+// //	
 // //
 // //	return 0;
 // // }
@@ -135,15 +137,15 @@
 // //		m_A = 0;
 // //		m_B = 0;
 // //	}
-// //	//Person P£»Ïàµ±ÓÚPerson *const P;±íÊ¾Ö¸ÏòµÄÖ¸Ïò²»¿É±ä
-// //		//thisÖ¸ÕëµÄ±¾ÖÊÊÇÒ»¸öÖ¸Õë³£Á¿£¬Ö¸ÕëµÄÖ¸Ïò²»¿ÉĞŞ¸Ä
-// //		//Èç¹ûÏëÈÃÖ¸ÕëÖ¸ÏòµÄÖµÒ²²»¿ÉÒÔĞŞ¸Ä£¬ĞèÒªÉùÃ÷³£º¯Êı
+// //	//Person Pï¼›ç›¸å½“äºPerson *const P;è¡¨ç¤ºæŒ‡å‘çš„æŒ‡å‘ä¸å¯å˜
+// //		//thisæŒ‡é’ˆçš„æœ¬è´¨æ˜¯ä¸€ä¸ªæŒ‡é’ˆå¸¸é‡ï¼ŒæŒ‡é’ˆçš„æŒ‡å‘ä¸å¯ä¿®æ”¹
+// //		//å¦‚æœæƒ³è®©æŒ‡é’ˆæŒ‡å‘çš„å€¼ä¹Ÿä¸å¯ä»¥ä¿®æ”¹ï¼Œéœ€è¦å£°æ˜å¸¸å‡½æ•°
 // //	void ShowPerson() const {
-// //		//Ïàµ±ÓÚ const Type* const pointer; ±íÊ¾Ö¸Ïò²»¿É±ä£¬Ö¸ÏòµÄÖµÒ²²»¿É±ä
-// //		//this = NULL; //²»ÄÜĞŞ¸ÄÖ¸ÕëµÄÖ¸Ïò Person* const this;
-// //		//this->m_A = 100; //µ«ÊÇthisÖ¸ÕëÖ¸ÏòµÄ¶ÔÏóµÄÊı¾İÊÇ¿ÉÒÔĞŞ¸ÄµÄ£¨ÔÚ·Ç³£º¯ÊıÏÂ£©
+// //		//ç›¸å½“äº const Type* const pointer; è¡¨ç¤ºæŒ‡å‘ä¸å¯å˜ï¼ŒæŒ‡å‘çš„å€¼ä¹Ÿä¸å¯å˜
+// //		//this = NULL; //ä¸èƒ½ä¿®æ”¹æŒ‡é’ˆçš„æŒ‡å‘ Person* const this;
+// //		//this->m_A = 100; //ä½†æ˜¯thisæŒ‡é’ˆæŒ‡å‘çš„å¯¹è±¡çš„æ•°æ®æ˜¯å¯ä»¥ä¿®æ”¹çš„ï¼ˆåœ¨éå¸¸å‡½æ•°ä¸‹ï¼‰
 // //
-// //		//constĞŞÊÎ³ÉÔ±º¯Êı£¬±íÊ¾Ö¸ÕëÖ¸ÏòµÄÄÚ´æ¿Õ¼äµÄÊı¾İ²»ÄÜĞŞ¸Ä£¬³ıÁËmutableĞŞÊÎµÄ±äÁ¿
+// //		//constä¿®é¥°æˆå‘˜å‡½æ•°ï¼Œè¡¨ç¤ºæŒ‡é’ˆæŒ‡å‘çš„å†…å­˜ç©ºé—´çš„æ•°æ®ä¸èƒ½ä¿®æ”¹ï¼Œé™¤äº†mutableä¿®é¥°çš„å˜é‡
 // //		this->m_B = 100;
 // //	}
 // //
@@ -157,30 +159,30 @@
 // //
 // // public:
 // //	int m_A;
-// //	mutable int m_B; //¿ÉÔÚ³£º¯ÊıÏÂĞŞ¸Ä ¿É±äµÄ
+// //	mutable int m_B; //å¯åœ¨å¸¸å‡½æ•°ä¸‹ä¿®æ”¹ å¯å˜çš„
 // // };
 // //
 // //
-// ////constĞŞÊÎ¶ÔÏó  ³£¶ÔÏó
+// ////constä¿®é¥°å¯¹è±¡  å¸¸å¯¹è±¡
 // // void test01() {
 // //
-// //	const Person person; //³£Á¿¶ÔÏó
+// //	const Person person; //å¸¸é‡å¯¹è±¡
 // //	// person.m_A = 100;
 // //	cout << person.m_A << endl;
-// //	//person.mA = 100; //³£¶ÔÏó²»ÄÜĞŞ¸Ä³ÉÔ±±äÁ¿µÄÖµ,µ«ÊÇ¿ÉÒÔ·ÃÎÊ
-// //	person.m_B = 100; //µ«ÊÇ³£¶ÔÏó¿ÉÒÔĞŞ¸ÄmutableĞŞÊÎ³ÉÔ±±äÁ¿
+// //	//person.mA = 100; //å¸¸å¯¹è±¡ä¸èƒ½ä¿®æ”¹æˆå‘˜å˜é‡çš„å€¼,ä½†æ˜¯å¯ä»¥è®¿é—®
+// //	person.m_B = 100; //ä½†æ˜¯å¸¸å¯¹è±¡å¯ä»¥ä¿®æ”¹mutableä¿®é¥°æˆå‘˜å˜é‡
 // //	cout << person.m_B << endl;
-// //	//³£¶ÔÏó·ÃÎÊ³ÉÔ±³£º¯Êı
+// //	//å¸¸å¯¹è±¡è®¿é—®æˆå‘˜å¸¸å‡½æ•°
 // //	person.MyFunc(); //
 // //	cout << person.m_B << endl;
-// //	//person.Mfun();//³£¶ÔÏó²»¿Éµ÷ÓÃÆÕÍ¨³ÉÔ±º¯Êı£¬ÒòÎªÆÕÍ¨º¯Êı¿ÉÒÔĞŞ¸ÄÖµ¡£
+// //	//person.Mfun();//å¸¸å¯¹è±¡ä¸å¯è°ƒç”¨æ™®é€šæˆå‘˜å‡½æ•°ï¼Œå› ä¸ºæ™®é€šå‡½æ•°å¯ä»¥ä¿®æ”¹å€¼ã€‚
 // // }
 // //
 // // int main() {
 // //
 // //	test01();
 // //
-// //	system("pause");
+// //	
 // //
 // //	return 0;
 // // }
@@ -214,8 +216,8 @@
 // //
 // // Building::Building()
 // //{
-// //	this->m_sittingRoom = "¿ÍÌü";
-// //	this->m_BedRoom = "ÎÔÊÒ";
+// //	this->m_sittingRoom = "å®¢å…";
+// //	this->m_BedRoom = "å§å®¤";
 // // }
 // //
 // // goodGay::goodGay()
@@ -226,13 +228,13 @@
 // //
 // // void goodGay::visit()
 // //{
-// //	cout << "ºÃÓÑÕıÔÚ·ÃÎÊ" << building->m_sittingRoom << endl;
-// //	cout << "ºÃÓÑÕıÔÚ·ÃÎÊ" << building->m_BedRoom << endl;
+// //	cout << "å¥½å‹æ­£åœ¨è®¿é—®" << building->m_sittingRoom << endl;
+// //	cout << "å¥½å‹æ­£åœ¨è®¿é—®" << building->m_BedRoom << endl;
 // // }
 // //
 // // void goodGay::visit2()
 // //{
-// //	cout << "ºÃÓÑÕıÔÚ·ÃÎÊ2" << building->m_sittingRoom << endl;
+// //	cout << "å¥½å‹æ­£åœ¨è®¿é—®2" << building->m_sittingRoom << endl;
 // // }
 // //
 // // void test01()
@@ -315,8 +317,8 @@
 // //	int m_Age;
 // // };
 // //
-// ////¼Ì³ĞÇ°¼Óvirtual¹Ø¼ü×Öºó£¬±äÎªĞé¼Ì³Ğ
-// ////´ËÊ±¹«¹²µÄ¸¸ÀàAnimal³ÆÎªĞé»ùÀà
+// ////ç»§æ‰¿å‰åŠ virtualå…³é”®å­—åï¼Œå˜ä¸ºè™šç»§æ‰¿
+// ////æ­¤æ—¶å…¬å…±çš„çˆ¶ç±»Animalç§°ä¸ºè™šåŸºç±»
 // //
 // // class Tuo : virtual public Animal {};
 // // class Sheep : virtual public Animal {};
@@ -340,11 +342,12 @@
 // //
 // //	test01();
 // //
-// //	system("pause");
+// //	
 // //
 // //	return 0;
 // //}
 
+/*
 #include <string>
 #include <iostream>
 using namespace std;
@@ -353,41 +356,41 @@ class Animal
 public:
     Animal()
     {
-        cout << "Animal ¹¹Ôìº¯Êıµ÷ÓÃ£¡" << endl;
+        cout << "Animal æ„é€ å‡½æ•°è°ƒç”¨ï¼" << endl;
     }
     virtual void Speak() = 0;
 
-    // Îö¹¹º¯Êı¼ÓÉÏvirtual¹Ø¼ü×Ö£¬±ä³ÉĞéÎö¹¹º¯Êı
+    // ææ„å‡½æ•°åŠ ä¸Švirtualå…³é”®å­—ï¼Œå˜æˆè™šææ„å‡½æ•°
     ~Animal()
     {
-        cout << "AnimalĞéÎö¹¹º¯Êıµ÷ÓÃ£¡" << endl;
+        cout << "Animalè™šææ„å‡½æ•°è°ƒç”¨ï¼" << endl;
     }
 
-    /*virtual ~Animal() = 0;*/
+    //virtual ~Animal() = 0;
 };
 
 // Animal::~Animal()
 //{
-//	cout << "Animal ´¿ĞéÎö¹¹º¯Êıµ÷ÓÃ£¡" << endl;
+//	cout << "Animal çº¯è™šææ„å‡½æ•°è°ƒç”¨ï¼" << endl;
 // }
 
-// ºÍ°üº¬ÆÕÍ¨´¿Ğéº¯ÊıµÄÀàÒ»Ñù£¬°üº¬ÁË´¿ĞéÎö¹¹º¯ÊıµÄÀàÒ²ÊÇÒ»¸ö³éÏóÀà¡£²»ÄÜ¹»±»ÊµÀı»¯¡£
+// å’ŒåŒ…å«æ™®é€šçº¯è™šå‡½æ•°çš„ç±»ä¸€æ ·ï¼ŒåŒ…å«äº†çº¯è™šææ„å‡½æ•°çš„ç±»ä¹Ÿæ˜¯ä¸€ä¸ªæŠ½è±¡ç±»ã€‚ä¸èƒ½å¤Ÿè¢«å®ä¾‹åŒ–ã€‚
 
 class Cat : public Animal
 {
 public:
     Cat(string name)
     {
-        cout << "Cat¹¹Ôìº¯Êıµ÷ÓÃ£¡" << endl;
+        cout << "Catæ„é€ å‡½æ•°è°ƒç”¨ï¼" << endl;
         m_Name = new string(name);
     }
     virtual void Speak()
     {
-        cout << *m_Name << "Ğ¡Ã¨ÔÚËµ»°!" << endl;
+        cout << *m_Name << "å°çŒ«åœ¨è¯´è¯!" << endl;
     }
     ~Cat()
     {
-        cout << "CatÎö¹¹º¯Êıµ÷ÓÃ!" << endl;
+        cout << "Catææ„å‡½æ•°è°ƒç”¨!" << endl;
         if (this->m_Name != NULL)
         {
             delete m_Name;
@@ -404,9 +407,9 @@ void test01()
     Animal *animal = new Cat("Tom");
     animal->Speak();
 
-    // Í¨¹ı¸¸ÀàÖ¸ÕëÈ¥ÊÍ·Å£¬»áµ¼ÖÂ×ÓÀà¶ÔÏó¿ÉÄÜÇåÀí²»¸É¾»£¬Ôì³ÉÄÚ´æĞ¹Â©
-    // ÔõÃ´½â¾ö£¿¸ø»ùÀàÔö¼ÓÒ»¸öĞéÎö¹¹º¯Êı
-    // ĞéÎö¹¹º¯Êı¾ÍÊÇÓÃÀ´½â¾öÍ¨¹ı¸¸ÀàÖ¸ÕëÊÍ·Å×ÓÀà¶ÔÏó
+    // é€šè¿‡çˆ¶ç±»æŒ‡é’ˆå»é‡Šæ”¾ï¼Œä¼šå¯¼è‡´å­ç±»å¯¹è±¡å¯èƒ½æ¸…ç†ä¸å¹²å‡€ï¼Œé€ æˆå†…å­˜æ³„æ¼
+    // æ€ä¹ˆè§£å†³ï¼Ÿç»™åŸºç±»å¢åŠ ä¸€ä¸ªè™šææ„å‡½æ•°
+    // è™šææ„å‡½æ•°å°±æ˜¯ç”¨æ¥è§£å†³é€šè¿‡çˆ¶ç±»æŒ‡é’ˆé‡Šæ”¾å­ç±»å¯¹è±¡
     delete animal;
 }
 
@@ -415,8 +418,8 @@ int main()
 
     test01();
 
-   system("pause");
+   
 
     return 0;
-}
+}*/
 
