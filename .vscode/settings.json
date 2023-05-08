@@ -14,7 +14,7 @@
               },
             "terminal.integrated.defaultProfile.windows": "PowerShell",
         
-         //   "code-runner.runInTerminal": false,//是否在终端运行代码//可有可无
+           "code-runner.runInTerminal": false,//是否在终端运行代码
         
     //koroFileHeader的configuration
     "files.associations": {
