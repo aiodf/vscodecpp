@@ -18,8 +18,9 @@
         
     //koroFileHeader的configuration
     "files.associations": {
-        "*.cpp": "cpp",
-        "ostream": "cpp"
+      "*.cpp": "cpp",
+      "ostream": "cpp",
+      "iostream": "cpp"
     },
     
      //配置 koroFileHeader

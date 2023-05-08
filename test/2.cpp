@@ -1,13 +1,13 @@
 /*** 
  * @Author: aiodf
- * @Date: 2023-05-08 19:49:31
+ * @Date: 2023-05-08 19
  * @LastEditors: aiodf
- * @LastEditTime: 2023-05-08 20:06:55
+ * @LastEditTime: 2023-05-08 20
  * @FilePath: \vscodecpp\test\2.cpp
  * @Description: 
  */
 
-
+/*
 using namespace std;
 #include<string>
 #include<iostream>
@@ -64,7 +64,7 @@ private://属性
 	int m_H;
 };
 
-bool Compare(Cube& c1, Cube& c2)
+bool Compare(Cube& c1, Cube& c2)//比较是否相等，全等，返回真
 {
 	if (c1.getL() == c2.getL()&& c1.getW() == c2.getW()&& c1.getH() == c2.getH())
 	{
@@ -92,41 +92,41 @@ int main() {
 	
 
 	return 0;
+}*/
+
+#include<iostream>
+using namespace std;
+#include<string>
+
+class Person
+{
+public:
+	//构造函数
+	Person(int a)
+	{
+		cout << "Person的构造函数调用" << endl;
+	}
+	//析构函数
+	~Person()
+	{
+		cout << "Person的析构函数调用" << endl;
+	}
+
+};
+
+void test01()
+{
+	Person p(2);
 }
 
-// // #include<iostream>
-// // using namespace std;
-// // #include<string>
-// //
-// // class Person
-// //{
-// // public:
-// //	//构造函数
-// //	Person(int a)
-// //	{
-// //		cout << "Person的构造函数调用" << endl;
-// //	}
-// //	//析构函数
-// //	~Person()
-// //	{
-// //		cout << "Person的析构函数调用" << endl;
-// //	}
-// //
-// // };
-// //
-// // void test01()
-// //{
-// //	Person p(2);
-// // }
-// //
-// // int main() {
-// //
-// //	test01();
-// //	//Person p;
-// //	
-// //
-// //	return 0;
-// // }
+int main() {
+
+	test01();
+	//Person p;
+	
+
+	return 0;
+}
 
 // // #include<iostream>
 // // using namespace std;
