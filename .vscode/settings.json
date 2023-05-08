@@ -34,10 +34,10 @@
             // "Author": "OBKoro1", // 写死的固定值 不从git config中获取
             "Date": "Do not edit", // 文件创建时间(不变)
             // LastEditors、LastEditTime、FilePath将会自动更新 如果觉得时间更新的太频繁可以使用throttleTime(默认为1分钟)配置更改更新时间。
- //          "LastEditors": "git config user.name", // 文件最后编辑者 与Author字段一致
+          "LastEditors": "git config user.name", // 文件最后编辑者 与Author字段一致
             // 由于编辑文件就会变更最后编辑时间，多人协作中合并的时候会导致merge
             // 可以将时间颗粒度改为周、或者月，这样冲突就减少很多。搜索变更时间格式: dateFormat
-//           "LastEditTime": "Do not edit", // 文件最后编辑时间
+           "LastEditTime": "Do not edit", // 文件最后编辑时间
             // 输出相对路径，类似: /文件夹名称/src/index.js
             "FilePath": "Do not edit", // 文件在项目中的相对路径 自动更新
             // 插件会自动将光标移动到Description选项中 方便输入 Description字段可以在specialOptions更改
@@ -82,7 +82,7 @@
               "newlineAddAnnotation": true // 默认遇到换行符(\r\n \n \r)添加注释符号
             },
             "moveCursor": true, // 自动移动光标到Description所在行
-            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+            "dateFormat": "YYYY-MM-DD HH",
             "atSymbol": ["@", "@"], // 更改所有文件的自定义注释中的@符号
             "atSymbolObj": {}, //  更改单独语言/文件的@
             "colon": [": ", ": "], // 更改所有文件的注释冒号
@@ -109,7 +109,7 @@
             // 自定义语言注释，自定义取消 head、end 部分
             // 不设置自定义配置language无效 默认都有head、end
             "customHasHeadEnd": {}, // "cancel head and function" | "cancel head" | "cancel function" 
-            "throttleTime": 60000, // 对同一个文件 需要过1分钟再次修改文件并保存才会更新注释
+            "throttleTime": 600000, // 对同一个文件 需要过10分钟再次修改文件并保存才会更新注释
              // 自定义语言注释符号，覆盖插件的注释格式
             "language": {
                 // js后缀文件

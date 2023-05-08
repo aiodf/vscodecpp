@@ -1,12 +1,11 @@
 /*** 
  * @Author: aiodf
- * @Date: 2023-05-08 19:49:31
+ * @Date: 2023-05-08 19
  * @LastEditors: aiodf
- * @LastEditTime: 2023-05-08 20:03:56
+ * @LastEditTime: 2023-05-08 20
  * @FilePath: \vscodecpp\demo\1.cpp
  * @Description: 
  */
-
 
 void swa(int a,int b);
 #include<iostream>//预处理
