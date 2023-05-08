@@ -115,6 +115,7 @@ public:
 };
 
 void test01()
+
 {
 	Person p(2);
 }
