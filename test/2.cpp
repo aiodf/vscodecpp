@@ -1,11 +1,4 @@
-/*
- * @Author       : aiodf 1796997271@qq.com
- * @Date         : 2023-03-28 19:19:29
- * @LastEditors  : aiodf 1796997271@qq.com
- * @LastEditTime : 2023-03-29 11:37:36
- * @FilePath     : \test2\2.cpp
- * @Description  : // // #include<iostream>
- * */
+
 using namespace std;
 #include<string>
 #include<iostream>
